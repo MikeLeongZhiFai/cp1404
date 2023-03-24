@@ -1,5 +1,4 @@
 def main():
-
     score = float(input("Enter score: "))
     print(determine_grades(score))
 
