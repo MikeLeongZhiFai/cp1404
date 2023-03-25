@@ -1,10 +1,25 @@
-MENU="""(G)et score\n(P)rint result\n(S)how stars\n(Q)uit: """
+MENU="""(G)et a valid score\n(P)rint result\n(S)how stars\n(Q)uit"""
 
 def main():
-    score = float(input("Enter score: "))
-    print(determine_grades(score))
+    print(MENU)
+    choice = ""
 
-def determine_grades(score):
+    while choice != "Q":
+        choice = input("Choose one of the following option ").upper()
+        if choice == "G":
+            score = int(input("Enter score: "))
+
+        elif choice == "P":
+            print(determine_status(score))
+
+        elif choice=="S":
+            print(show_stars(score))
+
+        else:
+            print("Farewell")
+        print(MENU)
+
+def determine_status(score):
     """Determine the status of a given score."""
     if score < 0 or score > 100:
         return "Invalid score"
@@ -16,6 +31,8 @@ def determine_grades(score):
         return "Bad"
 
 def show_stars(score):
-    print("*" * score)
+    """str(stars)=("*" * int(score)"""
+    stars="*" * score
+    return stars
 
 main()
