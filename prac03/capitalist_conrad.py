@@ -1,7 +1,7 @@
 import random
 
-MAX_INCREASE = 0.1  # 10%
-MAX_DECREASE = 0.05  # 5%
+MAX_DECREASE = 0.05
+MAX_INCREASE = 0.1
 MINIMUM_PRICE = 0.01
 MAXIMUM_PRICE = 1000.0
 STARTING_PRICE = 10.0
@@ -9,8 +9,8 @@ FILENAME = "stock_output.txt"
 
 out_file = open(FILENAME, 'w')
 
-price = STARTING_PRICE
 day = 0
+price = STARTING_PRICE
 print(f"Starting price: ${price:,.2f}", file=out_file)
 
 while MINIMUM_PRICE <= price <= MAXIMUM_PRICE:
