@@ -6,7 +6,7 @@ with open("name.txt", "w") as file:
 
 
 """2.(In the same file, but as if it were a separate program) Write code that opens "name.txt" and reads the name (as above) then prints,
-"Your name is Bob" (or whatever the name is in the file)""".
+"Your name is Bob" (or whatever the name is in the file)"""
 with open("name.txt", "r") as file:
     name = file.read().strip()
 print("Your name is", name)
