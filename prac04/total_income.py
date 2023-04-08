@@ -16,4 +16,5 @@ def print_record(incomes):
         total += income
         print(f"Month {month:2} - Income: ${income:10.2f} Total: ${total:10.2f}")
 
+
 main()
