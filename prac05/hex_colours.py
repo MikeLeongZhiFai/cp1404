@@ -1,3 +1,4 @@
+"""Estimate: 20 mins, Actual: 15 mins"""
 
 CODE_FOR_COLOUR = {"AliceBlue": "#f0f8ff", "AntiqueWhite": "#faebd7",
                 "AntiqueWhite1": "#ffefdb", "AntiqueWhite2": "#eedfcc",
