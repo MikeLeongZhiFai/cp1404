@@ -1,3 +1,5 @@
+"Estimate: 40 minutes,Actual: 70mins"
+
 FILENAME = "wimbledon.csv"
 INDEX_COUNTRY = 1
 INDEX_CHAMPION = 2
@@ -29,7 +31,7 @@ def show_results(champion_to_count, countries):
 def get_records(filename):
     records = []
     with open(filename, "r", encoding="utf-8-sig") as in_file:
-        in_file.readline()  # Remove header
+        in_file.readline()
         for line in in_file:
             parts = line.strip().split(",")
             records.append(parts)
