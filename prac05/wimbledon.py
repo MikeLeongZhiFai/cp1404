@@ -1,4 +1,4 @@
-"Estimate: 40 minutes,Actual: 70 minutes"
+"""Estimate: 40 minutes,Actual: 70 minutes"""
 
 FILENAME = "wimbledon.csv"
 INDEX_COUNTRY = 1
