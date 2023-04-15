@@ -1,3 +1,4 @@
+"""Estimate: 40mins, Actual: 25mins"""
 word_to_count = {}
 text = input("Text: ")
 words = text.split()
