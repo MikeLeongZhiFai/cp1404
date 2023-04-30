@@ -26,7 +26,7 @@ def get_subjects():
 
 def display_subjects(subjects):
     for subject in subjects:
-        print("{} is taught by {:12} and has {:3} students".format(*subject))
+        print(f"{subject[0]} is taught by {subject[1]:12} and has {subject[2]:3} students")
 
 
 main()
